@@ -13,7 +13,6 @@ Stack: **Next.js 14 (App Router)** for both frontend and backend, **Prisma** as 
 
 ```bash
 npm install
-cp .env       # already has working SQLite defaults for local dev
 npx prisma db push         # creates dev.db and the tables from schema.prisma
 npm run seed                # creates the one admin user, from ADMIN_EMAIL/ADMIN_PASSWORD in .env
 npm run dev                  # http://localhost:3000
