@@ -10,11 +10,9 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite" // change to "postgresql" for production deploy
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-
-
 
 model Lead {
   id          String   @id @default(cuid())
